@@ -10,14 +10,14 @@ public class TestaCarro {
 		s.beginTransaction();
 		//Criando novo carro
 		Carro c = new Carro();
-		c.setAno(1997);
-		c.setChassi("AD09FD34KJDKFJA");
-		c.setCombustivel("Flex");
-		c.setCor("Azul");
+		c.setAno(2014);
+		c.setChassi("TXTESTEXX");
+		c.setCombustivel("Gasolina");
 		c.setPlaca("MZV-777");
-		c.setQuilometragem(199);
+		c.setQuilometragem(19449);
 		c.setRenavam("9458498545");
 		c.setValorLocacao(1500);
+		c.setPreco(155.6);
 		
 		s.save(c);
 		s.getTransaction().commit();
