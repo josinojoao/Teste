@@ -8,7 +8,7 @@ public class TestaCarro {
 	
 		Session s = HibernateUtil.getSessionFactory().openSession();
 		s.beginTransaction();
-		
+		//Criando novo carro
 		Carro c = new Carro();
 		c.setAno(1997);
 		c.setChassi("AD09FD34KJDKFJA");
