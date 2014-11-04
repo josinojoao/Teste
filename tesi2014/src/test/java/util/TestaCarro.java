@@ -5,7 +5,7 @@ import org.hibernate.Session;
 public class TestaCarro {
 
 	public static void main(String[] args) {
-		//Commit tunts
+		//Restaurando o tunts tunts
 		Session s = HibernateUtil.getSessionFactory().openSession();
 		s.beginTransaction();
 		//Criando novo carro
