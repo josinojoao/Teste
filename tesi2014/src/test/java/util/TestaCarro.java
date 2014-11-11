@@ -7,7 +7,7 @@ import entity.Carro;
 
 public class TestaCarro {
 
-	//Teste committt
+	//Teste commit
 	
 	public static void main(String[] args) {
 		/*Teste antigo
