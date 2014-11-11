@@ -11,8 +11,6 @@ public class CarroDAO extends MasterDAO {
 
 public class CarroDAO {
 	
-	//Criando DAO
-	
 	public Session getSession() {
 		return HibernateUtil.getSessionFactory().openSession();
 	}
