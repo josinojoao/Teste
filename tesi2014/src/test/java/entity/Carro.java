@@ -107,4 +107,9 @@ public class Carro implements Serializable {
 	public void setValorLocacao(double valorLocacao) {
 		this.valorLocacao = valorLocacao;
 	}
+	
+	@Override
+	public String toString() {
+		return getIdCarro()+" - "+getAno()+" - "+getPlaca();
+	}
 }

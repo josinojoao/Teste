@@ -5,45 +5,27 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.Session;
 
-import util.HibernateUtil;
 import entity.Carro;
 
-public class CarroDAO {
-	
-	
-	public Session getSession() {
-		return HibernateUtil.getSessionFactory().openSession();
-	}
+public class CarroDAO extends MasterDAO {
 	
 	public void inserirCarro(Carro carro) {
-		Session s = getSession();
-		s.beginTransaction();
-		s.save(carro);
-		s.getTransaction().commit();
-		s.close();
+		inserirObjeto(carro);
 	}
 	
 	public void atualizarCarro(Carro carro) {
-		Session s = getSession();
-		s.beginTransaction();
-		s.update(carro);
-		s.getTransaction().commit();
-		s.close();
+		atualizarObjeto(carro);
 	}
 	
 	public void deletarCarro(Carro carro) {
-		Session s = getSession();
-		s.beginTransaction();
-		s.delete(carro);
-		s.getTransaction().commit();
-		s.close();
+		deletarObjeto(carro);
 	}
 	
 	public List<Carro> listarCarros() {
 		Session s = getSession();
 		s.beginTransaction();
-		Query qr = s.createQuery("from carro");
+		Query qr = s.createQuery("from Carro c");
 		return qr.list();
+		
 	}
-	
 }
