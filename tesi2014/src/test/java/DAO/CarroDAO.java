@@ -8,7 +8,15 @@ import org.hibernate.Session;
 import entity.Carro;
 
 public class CarroDAO extends MasterDAO {
+
+public class CarroDAO {
 	
+	//Criando DAO
+	
+	public Session getSession() {
+		return HibernateUtil.getSessionFactory().openSession();
+	}
+
 	public void inserirCarro(Carro carro) {
 		inserirObjeto(carro);
 	}
