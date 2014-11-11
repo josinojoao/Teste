@@ -2,6 +2,8 @@ package util;
 
 import org.hibernate.Session;
 
+import entity.Carro;
+
 public class TestaCarro {
 
 	public static void main(String[] args) {
