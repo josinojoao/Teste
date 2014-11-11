@@ -10,6 +10,7 @@ import entity.Carro;
 
 public class CarroDAO {
 	
+	//Criando DAO
 	
 	public Session getSession() {
 		return HibernateUtil.getSessionFactory().openSession();
