@@ -7,6 +7,8 @@ import entity.Carro;
 
 public class TestaCarro {
 
+	//Teste commit
+	
 	public static void main(String[] args) {
 		/*Teste antigo
 		Session s = HibernateUtil.getSessionFactory().openSession();
